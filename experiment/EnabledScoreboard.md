@@ -6,7 +6,7 @@ title: enabled_scoreboard
 
 > Experiment类的配置可能会有点bug，请谨慎使用。
 
-本配置位于mint_global.toml，来自于LemonMint
+本配置位于mint_global.toml，LemonMint独有
 
 ```toml
 [experiment.enabled_scoreboard]

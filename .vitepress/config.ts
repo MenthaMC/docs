@@ -1,10 +1,10 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-    base: '/LemonMint',
-    titleTemplate: 'LemonMint | :title',
+    base: '/docs',
+    titleTemplate: 'MenthaMC docs | :title',
     themeConfig: {
-        siteTitle: 'LemonMint',
+        siteTitle: 'MenthaMC',
         search: {
             provider: 'local'
         },
@@ -12,7 +12,7 @@ export default defineConfig({
             {
                 text: "概述",
                 collapsed: false,
-                items: [{ text: "LemonMint概述以及文件结构", link: "/" }],
+                items: [{ text: "概述与指南", link: "/" }],
             },
             {
                 text: "misc",
@@ -44,7 +44,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-            { icon: "github", link: "https://github.com/MenthaMC/Lemint" },
+            { icon: "github", link: "https://github.com/MenthaMC" },
         ],
     }
 })

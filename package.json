@@ -2,7 +2,7 @@
   "name": "@lemint/docs",
   "version": "1.0.0",
   "description": "This is a docs of LemonMint.",
-  "main": "index.md",
+  "main": "TemporarilyDeprecated.md",
   "scripts": {
     "dev": "vitepress dev --host 0.0.0.0",
     "build": "vitepress build"

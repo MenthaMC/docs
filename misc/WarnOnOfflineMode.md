@@ -4,7 +4,7 @@ title: warn_on_offine_mode
 
 # 配置 - warn_on_offine_mode
 
-本配置位于mint_global.toml，来自于上游Mint
+本配置位于mint_global.toml，Mint/LemonMint都有
 
 ```toml
 [misc.warn_on_offline_mode]

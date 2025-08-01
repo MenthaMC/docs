@@ -4,7 +4,7 @@ title: regionbar
 
 # 配置 - regionbar
 
-本配置位于mint_global.toml，来自于上游Mint
+本配置位于mint_global.toml，Mint/LemonMint都有
 
 ```toml
 [misc.regionbar]
