@@ -33,7 +33,7 @@ title: Mint/LemonMint官方文档
 
 ## 文件结构
 
-LemonMint 的文件结构与Bukkit、Folia、Paper等服务端相似，相比他们，我们多了一个`mint`文件夹，专门存放面对服务端的配置（Mint服务端一样，如果熟悉Mint服务端，那么你一定可以了解LemonMint大部分操作以及配置）。
+Mint/LemonMint 的文件结构与Bukkit、Folia、Paper等服务端相似，相比他们，我们多了一个`mint`文件夹，专门存放面对服务端的配置。
 
 Mint 文件夹文件结构
 ```
