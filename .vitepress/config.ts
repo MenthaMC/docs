@@ -15,6 +15,13 @@ export default defineConfig({
                 items: [{ text: "概述与指南", link: "/" }],
             },
             {
+                text: "plugin",
+                collapsed: false,
+                items: [
+                    { text: "概述", link: "plugin/overview" },
+                ]
+            },
+            {
                 text: "misc",
                 collapsed: false,
                 items: [
