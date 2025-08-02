@@ -19,6 +19,7 @@ export default defineConfig({
                 collapsed: false,
                 items: [
                     { text: "概述", link: "plugin/overview" },
+                    { text: "事件", link: "plugin/event" }
                 ]
             },
             {
