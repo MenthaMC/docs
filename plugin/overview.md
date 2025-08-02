@@ -4,8 +4,6 @@ title: 插件系统概述
 
 # 插件系统概述
 
-> 该插件系统为测试阶段，目前LemonMint正式版是没有实装的，该插件为[dev/1.21.8-new-plugin-system](https://github.com/MenthaMC/LemonMint/tree/dev/1.21.8-new-plugin-system)分支独有
-
 该插件系统并不是Bukkit和Paper的Java插件系统，而是LemonMint在1.21.8-R0.1版本中添加的新特性。该插件系统抛弃了传统的Java语言开发插件，转为更小巧更简易的Lua脚本插件，其目的是为了让编写插件更快速更简单。（注：Mint没有该特性）
 
 ## 开始
@@ -17,12 +15,12 @@ title: 插件系统概述
 ```lua
 local plugin = function(plugin)
     plugin.enable = function()
-        plugin.logger.info("Hello LemonMint Plugin!!")
+        plugin.logger:info("Enabled {}.", plugin.meta:getName())
     end
 end
 
 local meta = {
-    name = "TestPlugin",
+    name = "Test",
     version = "1.0.0"
 }
 
