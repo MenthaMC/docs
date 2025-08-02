@@ -8,13 +8,13 @@ title: 事件
 
 ## 基本运用
 
-> 该插件系统暂时只有玩家加入游戏事件（
+> 该插件系统的事件已经大部分完善，事件名与Bukkit事件类名对照在这里：[EventMap.java](https://github.com/MenthaMC/LemonMint/blob/dev/1.21.8/lemint-server/src/main/java/me/coderfrish/event/EventMap.java)
 
 ```lua
 local plugin = function(plugin)
     -- 玩家加入事件
     local join = function(event)
-        event.setJoinMessage("Welcome " .. event.player.name .. " Join this server!!")
+        event.setJoinMessage("Welcome " .. event:getPlayer():getName() .. " Join this server!!")
     end
     
     plugin.enable = function()

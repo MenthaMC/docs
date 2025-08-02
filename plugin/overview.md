@@ -12,6 +12,8 @@ title: 插件系统概述
 
 该插件系统不需要引入Jar包也不需要用什么构建系统，一个文件就可以搞定。
 
+> 注：meta中name和version是必须写的，不然会报错。
+
 ```lua
 local plugin = function(plugin)
     plugin.enable = function()
