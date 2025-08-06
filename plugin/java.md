@@ -28,7 +28,7 @@ const installer = (plugin) => {
 }
 
 function sendMessage(message) {
-    Bukkit.getConsoleSender().sendMessage("Hello World!!")
+    Bukkit.getConsoleSender().sendMessage(message)
 }
 
 export default { name: "TestPlugin", version: "1.0.0", installer }

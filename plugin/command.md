@@ -1,16 +1,13 @@
 ---
-title: 事件
+title: 指令
 ---
 
-# 事件系统
+# 指令系统
 
 ## 基本运用
 
-可以通过调用plugin中的registerEvent方法注册事件，但是事件类型需要通过Java.type 获取java来注册。
-
 ```js
 const Bukkit = Java.type("org.bukkit.Bukkit")
-const PlayerJoinEvent = Java.type("org.bukkit.event.player.PlayerJoinEvent")
 
 const installer = (plugin) => {
     return {
@@ -20,9 +17,10 @@ const installer = (plugin) => {
 
         onEnabled() {
             sendMessage("Enabled Plugin")
-            plugin.event.listen(PlayerJoinEvent, function (event) {
-                event.getPlayer().sendMessage("Hello World!!")
-            })
+            plugin.command.register("test", function (sender, command, args) {
+                sender.sendMessage("Hello World!!")
+                return true
+            }, {  })
         },
 
         onDisabled() {
@@ -37,6 +35,3 @@ function sendMessage(message) {
 
 export default { name: "TestPlugin", version: "1.0.0", installer }
 ```
-
-效果
-![img.png](event/results.png)
