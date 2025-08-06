@@ -25,7 +25,7 @@ title: Mint/LemonMint官方文档
 - Bukkit Scoreboard API和原本Scoreboard命令的正常化（但是Bukkit API创建的Scoreboard并不受原版的Scoreboard指令控制）
 - 从Purpur搬过来的6格末影箱（某位用户提起的，其实在1.21.5还是1.21.7就开始提的，1.21.8才正式搬过来）
 - 对于Bukkit Scheduler API的简单恢复（并不代表全部恢复）
-- Lua插件机制（在测试，为[dev/1.21.8-new-plugin-system](https://github.com/MenthaMC/LemonMint/tree/dev/1.21.8-new-plugin-system)分支独有）
+- JavaScript脚本插件机制
 
 ## 更多信息
 
