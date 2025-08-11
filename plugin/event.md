@@ -12,22 +12,20 @@ title: 事件
 const Bukkit = Java.type("org.bukkit.Bukkit")
 const PlayerJoinEvent = Java.type("org.bukkit.event.player.PlayerJoinEvent")
 
-const installer = (plugin) => {
-    return {
-        onLoaded() {
-            sendMessage("Loaded Plugin")
-        },
+const installer = {
+    onLoaded() {
+        sendMessage("Loaded Plugin")
+    },
 
-        onEnabled() {
-            sendMessage("Enabled Plugin")
-            plugin.event.listen(PlayerJoinEvent, function (event) {
-                event.getPlayer().sendMessage("Hello World!!")
-            })
-        },
+    onEnabled() {
+        sendMessage("Enabled Plugin")
+        plugin.event.listen(PlayerJoinEvent, function (event) {
+            event.getPlayer().sendMessage("Hello World!!")
+        })
+    },
 
-        onDisabled() {
-            sendMessage("Disabled Plugin")
-        }
+    onDisabled() {
+        sendMessage("Disabled Plugin")
     }
 }
 

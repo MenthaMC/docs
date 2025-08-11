@@ -9,23 +9,21 @@ title: 指令
 ```js
 const Bukkit = Java.type("org.bukkit.Bukkit")
 
-const installer = (plugin) => {
-    return {
-        onLoaded() {
-            sendMessage("Loaded Plugin")
-        },
+const installer = {
+    onLoaded() {
+        sendMessage("Loaded Plugin")
+    },
 
-        onEnabled() {
-            sendMessage("Enabled Plugin")
-            plugin.command.register("test", function (sender, command, args) {
-                sender.sendMessage("Hello World!!")
-                return true
-            }, {  })
-        },
+    onEnabled() {
+        sendMessage("Enabled Plugin")
+        plugin.command.register("test", function (sender, command, args) {
+            sender.sendMessage("Hello World!!")
+            return true
+        }, {  })
+    },
 
-        onDisabled() {
-            sendMessage("Disabled Plugin")
-        }
+    onDisabled() {
+        sendMessage("Disabled Plugin")
     }
 }
 

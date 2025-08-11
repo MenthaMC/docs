@@ -12,17 +12,17 @@ title: 插件系统概述
 
 > 注：name和version是必须写的，不然会报错。
 
+在提交[786f5ab](https://github.com/MenthaMC/LemonMint/commit/786f5ab93ef0c1bd68e811954138f17bfc8eb9d3)中，已经取消了installer以函数的形式被注册，转变为installer为变量，并且获取插件单例可以通过全局变量`plugin`获取
+
 ```js
-const installer = (plugin) => {
-    return {
-        onLoaded() {
-        },
+const installer = {
+    onLoaded() {
+    },
 
-        onEnabled() {
-        },
+    onEnabled() {
+    },
 
-        onDisabled() {
-        }
+    onDisabled() {
     }
 }
 
