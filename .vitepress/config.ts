@@ -26,6 +26,14 @@ export default defineConfig({
                 ]
             },
             {
+                text: "globals",
+                collapsed: false,
+                items: [
+                    { text: "language", link: "globals/Language" },
+                    { text: "warn_logger", link: "globals/WarnLogger" }
+                ]
+            },
+            {
                 text: "misc",
                 collapsed: false,
                 items: [
@@ -42,9 +50,6 @@ export default defineConfig({
                 collapsed: false,
                 items: [
                     { text: "enable_datapack_function_command", link: "experiment/EnableDatapackFunctionCommand" },
-                    { text: "enabled_folia_supported", link: "experiment/EnabledFoliaSupported" },
-                    { text: "enabled_scoreboard", link: "experiment/EnabledScoreboard" },
-                    { text: "fixed_teleport", link: "experiment/FixedTeleport" },
                     { text: "force_enable_command_block_execution", link: "experiment/ForceEnableCommandBlockExecution" },
                 ]
             },
