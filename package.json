@@ -1,15 +1,14 @@
 {
   "name": "@lemint/docs",
   "version": "1.0.0",
-  "description": "This is a docs of LemonMint.",
-  "main": "TemporarilyDeprecated.md",
+  "main": "index.md",
   "scripts": {
     "dev": "vitepress dev --host 0.0.0.0",
     "build": "vitepress build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CoderFrish/Lemint.git"
+    "url": "https://github.com/MenthaMC/docs.git"
   },
   "private": true,
   "type": "module",

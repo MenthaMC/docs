@@ -6,7 +6,7 @@ title: enable_datapack_function_command
 
 > Experiment类的配置可能会有点bug，请谨慎使用。
 
-本配置位于mint_global.toml，Mint/LemonMint都有
+本配置位于mint_global.toml，Mint都有
 
 ```toml
 [experiment.enable_datapack_function_command]

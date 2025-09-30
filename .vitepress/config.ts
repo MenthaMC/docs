@@ -15,17 +15,6 @@ export default defineConfig({
                 items: [{ text: "概述与指南", link: "/" }],
             },
             {
-                text: "plugin",
-                collapsed: false,
-                items: [
-                    { text: "概述", link: "plugin/overview" },
-                    { text: "事件", link: "plugin/event" },
-                    { text: "java", link: "plugin/java" },
-                    { text: "配置", link: "plugin/config" },
-                    { text: "指令", link: "plugin/command" }
-                ]
-            },
-            {
                 text: "globals",
                 collapsed: false,
                 items: [

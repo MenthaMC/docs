@@ -4,7 +4,7 @@ title: username_checks
 
 # 配置 - username_checks
 
-本配置位于mint_global.toml，Mint/LemonMint都有
+本配置位于mint_global.toml，Mint都有
 
 ```toml
 [misc.username_checks]

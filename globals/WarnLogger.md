@@ -4,7 +4,7 @@ title: warn_logger
 
 # 配置 - warn_logger
 
-本配置位于mint_global.toml，LemonMint/Mint都有
+本配置位于mint_global.toml，Mint都有
 
 ```toml
 [globals.warn_logger]
